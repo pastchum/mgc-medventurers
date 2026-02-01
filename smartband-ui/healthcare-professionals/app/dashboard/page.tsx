@@ -79,9 +79,7 @@ export default function DashboardPage() {
             </div>
             <div>
               <p className="text-sm font-semibold">AVF SmartBand</p>
-              <p className="text-xs text-white/50">
-                Real-time AVF monitoring
-              </p>
+              <p className="text-xs text-white/50">Real-time AVF monitoring</p>
             </div>
           </div>
 
@@ -125,12 +123,8 @@ export default function DashboardPage() {
                     className={`h-2 w-2 rounded-full bg-gradient-to-r ${card.accent}`}
                   />
                 </div>
-                <div className="mt-4 text-4xl font-semibold">
-                  {card.count}
-                </div>
-                <p className="mt-2 text-sm text-white/55">
-                  {card.description}
-                </p>
+                <div className="mt-4 text-4xl font-semibold">{card.count}</div>
+                <p className="mt-2 text-sm text-white/55">{card.description}</p>
                 <button className="mt-6 text-sm font-medium text-indigo-300 hover:text-indigo-200">
                   {card.action} →
                 </button>
@@ -191,7 +185,7 @@ export default function DashboardPage() {
                   <div>
                     <span
                       className={`rounded-full px-3 py-1 text-xs font-medium ${riskBadge(
-                        reading.risk
+                        reading.risk,
                       )}`}
                     >
                       {reading.risk}
